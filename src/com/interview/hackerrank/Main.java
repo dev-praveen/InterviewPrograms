@@ -67,6 +67,6 @@ class Mapper {
 
   static Function<String, CharactersCount> getDistinctCharactersCount() {
 
-    return s -> new CharactersCount(s, (int) s.chars().distinct().count());
+    return name -> new CharactersCount(name, (int) name.chars().distinct().count());
   }
 }
